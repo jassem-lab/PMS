@@ -1,0 +1,52 @@
+{
+  "name": "portfoliomanagementsystem",
+  "version": "1.0.0",
+  "description": "A portfolio management system",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "if-env NODE_ENV=production && npm run start:prod || npm run build && npm run start:dev",
+    "oldStart": "npm run build && node server.js",
+    "start:prod": "node server.js",
+    "start:dev": "concurrently \"nodemon server.js\" \"cd client && npm start\"",
+    "install": "cd client && npm install",
+    "build": "cd client && npm run build",
+    "heroku-postbuild": "npm run build",
+    "watch": "concurrently \"nodemon server.js\" \"cd client && npm start\""
+  },
+  "repository": {
+   
+  },
+  "author": "JG",
+  "license": "MIT",
+  "bugs": {
+   
+  },
+  "dependencies": {
+    "@material-ui/icons": "^4.9.1",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "concurrently": "^5.3.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-fileupload": "^1.2.0",
+    "if-env": "^1.0.4",
+    "is-empty": "^1.2.0",
+    "jsonwebtoken": "^8.5.1",
+    "material-ui": "^0.20.2",
+    "mongoose": "^5.10.9",
+    "nodemon": "^2.0.5",
+    "passport": "^0.4.1",
+    "passport-jwt": "^4.0.0",
+    "path": "^0.12.7",
+    "react-icons": "^3.11.0",
+    "react-router": "^5.2.0",
+    "react-router-hash-history": "^0.2.3",
+    "recharts": "^1.8.5",
+    "redux": "^4.0.5",
+    "redux-thunk": "^2.3.0",
+    "validator": "^13.1.17"
+  },
+  "devDependencies": {}
+}

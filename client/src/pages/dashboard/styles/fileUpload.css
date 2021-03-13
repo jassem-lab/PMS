@@ -1,0 +1,17 @@
+input[type="file"] {
+    display: none;
+}
+.custom-file-upload {
+    transition: background-color 0.2s ease;
+    border: 1px solid #ccc;
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+
+.custom-file-upload:hover {
+    transition: background-color 0.2s ease;
+    background-color: #bfbfbf;
+}
